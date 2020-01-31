@@ -17,7 +17,7 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m -DskipTests'
+    mavenOptions: '-Xmx3072m -DskipTests -DrepositoryId=yammer-artifacts -Durl=https://pkgs.dev.azure.com/yammer/_packaging/yammer-artifacts/maven/v1'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
@@ -25,3 +25,4 @@ steps:
     mavenAuthenticateFeed: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean deploy'
+
