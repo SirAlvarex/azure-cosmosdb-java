@@ -10,6 +10,10 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- task: MavenAuthenticate@0
+  inputs:
+    artifactsFeeds: 'yammer-artifacts'
+    
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
