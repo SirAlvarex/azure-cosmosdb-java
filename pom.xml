@@ -32,6 +32,12 @@
   <name>Azure Cosmos DB SQL API</name>
   <description>Java Async SDK (with Reactive Extension RX support) for Azure Cosmos DB SQL API</description>
   <url>https://docs.microsoft.com/en-us/azure/cosmos-db</url>
+    <distributionManagement>
+        <repository>
+            <id>dev-azure-com-yammer-yammer-artifacts</id>
+            <url>https://pkgs.dev.azure.com/yammer/_packaging/yammer-artifacts/maven/v1</url>
+        </repository>
+    </distributionManagement>
   <modules>
     <module>commons</module>
     <module>commons-test-utils</module>
