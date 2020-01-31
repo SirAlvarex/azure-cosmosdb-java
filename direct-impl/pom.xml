@@ -32,6 +32,30 @@ SOFTWARE.
   <description>Azure Cosmos DB Async SDK Direct Internal Implementation</description>
   <url>https://docs.microsoft.com/en-us/azure/cosmos-db</url>
   <packaging>jar</packaging>
+    <repositories>
+      <repository>
+     <id>yammer-artifacts</id>
+     <url>https://pkgs.dev.azure.com/yammer/_packaging/yammer-artifacts/maven/v1</url>
+     <releases>
+       <enabled>true</enabled>
+     </releases>
+     <snapshots>
+       <enabled>true</enabled>
+     </snapshots>
+   </repository>
+  </repositories>
+  <distributionManagement>
+   <repository>
+     <id>yammer-artifacts</id>
+     <url>https://pkgs.dev.azure.com/yammer/_packaging/yammer-artifacts/maven/v1</url>
+     <releases>
+       <enabled>true</enabled>
+     </releases>
+     <snapshots>
+       <enabled>true</enabled>
+     </snapshots>
+   </repository>
+  </distributionManagement>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <test.groups>unit</test.groups>
