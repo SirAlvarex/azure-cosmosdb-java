@@ -13,7 +13,7 @@ steps:
 - task: MavenAuthenticate@0
   inputs:
     artifactsFeeds: 'yammer-artifacts'
-    
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
@@ -24,4 +24,4 @@ steps:
     publishJUnitResults: true
     mavenAuthenticateFeed: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'deploy'
+    goals: 'clean deploy'
